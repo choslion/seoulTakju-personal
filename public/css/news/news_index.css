@@ -1,0 +1,59 @@
+@import url(../sub_header.css);
+@import url(../news/news_detail.css);
+@import url(../news/news_write.css);
+@import url(../news/news_edit.css);
+@import url(../news/news.css);
+@import url(../sub_header.css);
+@import url(../footer.css);
+
+.en {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ko {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+}
+@media (max-width: 1200px) {
+  .w1640 {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

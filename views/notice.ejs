@@ -1,0 +1,43 @@
+<main class="notice-main ko">
+  <section class="notice-page__wrap">
+    <div class="">
+      <div class="notice-page__title p50">
+        <h1>공지사항</h1>
+        <p>서울탁주의 <span class="green">최신소식</span>을 알려드립니다.</p>
+      </div>
+      <div class="notice__search ko">
+        <input onkeyup="filter()" type="text" id="value" placeholder="검색어를 입력해 주세요" />
+        <a href=""><img src="img/notice search.png" alt="" /></a>
+      </div>
+      <div class="swiper notice-swiper">
+        <div class="swiper-wrapper">
+          <ul class="notice-list swiper-slide">
+            <% rows.forEach((row,index) => { %>
+            <div class="list">
+              <li>
+                <a onclick="javascript:location.href='/noticeDetail?id=<%= row.id %>'">
+                  <div class="p10 notice-writer">
+                    <p>서울탁주</p>
+                  </div>
+                  <div>
+                    <h2 class="title"><%= row.title %></h2>
+                  </div>
+                  <div class="notice-date">
+                    <p><%= row.create_time %></p>
+                  </div>
+                </a>
+              </li>
+            </div>
+            <% }) %>
+          </ul>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div>
+      <button class="writeBtn" type="button"><a onclick="location.href='/noticeWrite'">글쓰기</a></button>
+    </div>
+    <img class="notice_bori__left" src="img/move-bori.gif" alt="" />
+    <img class="notice_bori__right" src="img/move-bori_5.gif" alt="" />
+  </section>
+</main>

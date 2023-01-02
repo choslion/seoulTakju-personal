@@ -1,0 +1,19 @@
+<main class="notice-edit ko">
+  <section class="notice-wrap">
+    <div class="notice-page__title" style="margin-bottom: 50px">
+      <h1>공지사항 수정</h1>
+    </div>
+    <form method="post" action="/edit" class="notice_contents">
+      <input type="hidden" name="id" value="<%= row.id %>" />
+      <input type="hidden" name="create_time" value="<%= row.create_time %>" />
+      <input class="notice-title" type="text" name="title" value="<%= row.title %> " />
+      <div>
+        <textarea class="notice_contentsTxt" name="content"><%= row.content %></textarea>
+      </div>
+      <div class="notice-buttons">
+        <input class="notice__cancleBtn" type="button" value="취소" />
+        <input class="notice__confirmBtn" type="submit" value="완료" />
+      </div>
+    </form>
+  </section>
+</main>

@@ -1,0 +1,60 @@
+@import url(../sub_header.css);
+@import url(notice_edit.css);
+@import url(notice_style.css);
+@import url(notice_page.css);
+@import url(notice_write.css);
+@import url(../footer.css);
+
+.en {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ko {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+main.notice-main {
+  width: 100%;
+  padding: 200px 0;
+  background-color: #f5f2e1;
+  color: #333333;
+}
+
+a {
+  color: #333333;
+}
+
+.p10 {
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.swiper {
+  overflow: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

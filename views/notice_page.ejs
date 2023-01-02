@@ -1,0 +1,38 @@
+<main class="ko notice-page">
+  <img class="notice_bori__left" src="img/move-bori_2.gif" alt="" />
+  <img class="notice_bori__right" src="img/move-bori_5.gif" alt="" />
+  <section class="notice-detail__wrap">
+    <div class="notice-page__title">
+      <h1>공지사항</h1>
+      <p>서울탁주의 <span>최신소식</span>을 알려드립니다.</p>
+    </div>
+    <div class="notice-page__contents">
+      <div class="notice-contents__Title">
+        <input type="hidden" name="id" value="<%= row.id %> " />
+        <h2><%= row.title %></h2>
+        <span class="notice_writer">서울탁주</span>
+        <span class="notice_writeDate"><%= row.create_time %></span>
+      </div>
+      <div class="notice-contents__txtWrap">
+        <div class="notice-contents__text">
+          <pre><%= row.content %></pre>
+        </div>
+        <!-- <div class="content-listLine">
+          <span class="list_arrow"></span>
+          <ul class="next-notice__title">
+            <li>
+              <p>서울 탁주제조협회 60년 우리 막걸리 알릴 것</p>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+      <div class="notice-buttons">
+        <input class="notice__listBtn" type="button" onclick="javascript:location.href='/notice'" value="목록" />
+        <div>
+          <input class="notice__editBtn" type="submit" value="수정" onclick="javascript:location.href='/edit?id=<%= row.id %>'" />
+          <input class="notice__deleteBtn" type="button" value="삭제" onclick="javascript:location.href='/delete?id=<%= row.id %>'" />
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

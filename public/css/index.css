@@ -1,0 +1,106 @@
+/* header */
+@import url(header.css);
+
+/* container */
+@import url(section1.css);
+@import url(section2.css);
+@import url(section3.css);
+@import url(section4.css);
+@import url(section5.css);
+@import url(section6.css);
+
+/* footer */
+@import url(footer.css);
+
+@import url(aboutUs.css);
+@import url(Manufacture.css);
+@import url(product_detail.css);
+@import url(sub_header.css);
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  cursor: url(../img/curser.png), auto !important;
+}
+
+a {
+  cursor: url(../img/cursera.png), auto !important;
+}
+
+.en {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  cursor: url(../img/curser.png), auto !important;
+}
+
+.ko {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section {
+  background-color: #f5f2e1;
+}
+
+.w1640 {
+  width: 1640px;
+  margin: 0 auto;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 1200px) {
+  .w1640 {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,141 @@
+.detail-page {
+  position: relative;
+  padding: 200px 0;
+  box-sizing: border-box;
+}
+
+.detail-page .detail_bori__left {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  width: 17%;
+  opacity: 0.3;
+}
+
+.detail-page .detail_bori__right {
+  position: absolute;
+  right: 60px;
+  bottom: 15px;
+  width: 15%;
+  opacity: 0.3;
+  transform: rotate(30deg);
+}
+
+.detail-detail__wrap {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* margin-top: 200px; */
+}
+
+.detail-detail__wrap h2 {
+  font-weight: bold;
+}
+
+.detail-page__contents {
+  margin-top: 70px;
+}
+
+.detail_writer {
+  margin-right: 10px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.detail_writeDate {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.detail-contents__txtWrap {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #cbc6ad;
+  border-bottom: 1px solid #cbc6ad;
+}
+
+.detail-contents__text {
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+/* .next-detail__title p {
+  font-weight: 500;
+} */
+
+.content-listLine:hover {
+  background-color: rgba(203, 198, 173, 0.3);
+  cursor: pointer;
+}
+
+.content-listLine {
+  display: flex;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.list_arrow {
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-top: 5px;
+  margin-right: 20px;
+  background-image: url(../../img/detail_arrow.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.detail-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.detail__deleteBtn {
+  float: right;
+  width: 66px;
+  height: 30px;
+  border: 1px solid #cbc6ad;
+  background-color: transparent;
+}
+
+.detail__editBtn {
+  float: right;
+  width: 66px;
+  height: 30px;
+  margin-left: 10px;
+  border: 1px solid #cbc6ad;
+  background-color: transparent;
+}
+
+.detail__listBtn {
+  width: 66px;
+  height: 30px;
+  border: none;
+  background-color: #cbc6ad;
+  text-align: center;
+  line-height: 30px;
+}
+
+.detail__img {
+  width: 300px;
+  height: auto;
+}
+
+.detail__img>img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1400px) {
+  .detail-page {
+    padding: 200px 40px 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-contents__Title span {
+    font-size: 14px;
+  }
+}

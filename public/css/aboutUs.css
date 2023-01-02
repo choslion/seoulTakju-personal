@@ -1,0 +1,924 @@
+@import url(sub_header.css);
+@import url(login.css);
+@import url(join.css);
+@import url(footer.css);
+@import url(header.css);
+
+/* 기본 셋팅 및 배경보리 */
+
+.ko {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.aboutUs-page {
+  position: relative;
+  width: 100%;
+  background-color: #f5f2e1;
+  color: #333;
+}
+
+.aboutUs-page H1 {
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.aboutUs-page H2 {
+  margin-bottom: 50px;
+  font-size: 26px;
+}
+
+.aboutUs-page P {
+  font-size: 14px;
+}
+
+strong {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.aboutUs-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 0;
+  border-bottom: 2px solid rgba(194, 191, 175, 0.7);
+  box-sizing: border-box;
+}
+
+.aboutUs-page section:last-child {
+  border-bottom: none;
+}
+
+/* 보리 */
+
+.aboutUs-background__bori>img:nth-child(1) {
+  position: absolute;
+  top: 1000px;
+  left: -20px;
+  width: 15%;
+  opacity: 0.7;
+}
+
+.aboutUs-background__bori>img:nth-child(2) {
+  position: absolute;
+  top: 2100px;
+  right: 0px;
+  width: 13%;
+  opacity: 0.7;
+}
+
+.aboutUs-background__bori>img:nth-child(3) {
+  position: absolute;
+  top: 3600px;
+  left: -65px;
+  width: 15%;
+  opacity: 0.2;
+}
+
+.aboutUs-background__bori>img:nth-child(4) {
+  position: absolute;
+  right: 0px;
+  bottom: 600px;
+  width: 15%;
+  opacity: 0.3;
+}
+
+.aboutUs-background__bori>img:nth-child(5) {
+  position: absolute;
+  bottom: -5px;
+  left: 20px;
+  width: 15%;
+  opacity: 0.2;
+}
+
+/* aboutUs 메인이미지 */
+
+.aboutUs-img {
+  position: relative;
+  width: 100%;
+  margin-top: 70px;
+  padding-bottom: 50%;
+  background-image: url(../img/aboutUs_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.seoultakju-logo {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 26%;
+  padding-bottom: 10%;
+  background-image: url(../img/logo_wh.png);
+  background-size: cover;
+  transform: translate(-50% -50%);
+}
+
+/* aboutUs sub-nav  */
+.aboutUs-subNav {
+  width: 100%;
+  padding: 25px 0;
+  background-color: #cbc6ad;
+  box-sizing: border-box;
+}
+
+.aboutUs-subNav>ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.aboutUs-subNav>ul>li {
+  position: relative;
+  font-size: 18px;
+}
+
+.aboutUs-subNav>ul>li>a {
+  display: block;
+}
+
+.aboutUs-subNav>ul>li::after {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: -90px;
+  width: 1px;
+  height: 17px;
+  background-color: #333;
+  content: '';
+}
+
+.aboutUs-subNav>ul>li:last-child::after {
+  display: none;
+}
+
+/*  서울탁주제조협회 소개  */
+
+.aboutUs-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.intro-bori {
+  position: relative;
+  width: 100%;
+}
+
+.intro-bori img {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 15%;
+  opacity: 0.7;
+}
+
+.aboutUs-intro>div {
+  width: calc(50% - 30px);
+}
+
+.aboutUs-intro__txt p {
+  margin-bottom: 25px;
+}
+
+.aboutUs-intro__img {
+  width: 100%;
+  padding-bottom: 60%;
+  background-image: url(../img/about_sec2_2.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+/* 서울탁주제조협회 제조장  */
+
+.factory-bori {
+  position: relative;
+  width: 100%;
+}
+
+.factory-bori>img {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 10%;
+  opacity: 0.7;
+}
+
+.factory-map__img {
+  text-align: center;
+}
+
+.factory-map {
+  position: relative;
+}
+
+.subu {
+  position: absolute;
+  top: 180px;
+  left: 390px;
+  transition: all 0.3s;
+}
+
+.subu::after {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  font-size: 20px;
+  color: #333;
+  content: '●';
+}
+
+.dobong {
+  position: absolute;
+  top: 30px;
+  right: 410px;
+}
+
+.dobong::after {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  font-size: 20px;
+  color: #333;
+  content: '●';
+}
+
+.taereung {
+  position: absolute;
+  top: 200px;
+  right: 290px;
+}
+
+.taereung::after {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  font-size: 20px;
+  color: #333;
+  content: '●';
+}
+
+.guro {
+  position: absolute;
+  bottom: 120px;
+  left: 240px;
+}
+
+.guro::after {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  font-size: 20px;
+  color: #333;
+  content: '●';
+}
+
+.seongdong {
+  position: absolute;
+  right: 380px;
+  bottom: 280px;
+}
+
+.seongdong::after {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  font-size: 20px;
+  color: #333;
+  content: '●';
+}
+
+.gangdong {
+  position: absolute;
+  right: 140px;
+  bottom: 272px;
+}
+
+.gangdong::after {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  font-size: 20px;
+  color: #333;
+  content: '●';
+}
+
+/* 제조장 팝업 */
+
+.factory-title {
+  display: block;
+  border: none;
+  background-color: transparent;
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  /* z-index: 1; */
+  /* border: 1px solid #000; */
+}
+
+.factory-adress {
+  z-index: 10;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #cbc6ad;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.factory-adress strong {
+  font-weight: bold;
+}
+
+.factory-adress p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.active .subu-adress {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subu-adress {
+  position: absolute;
+  top: -160px;
+  left: -5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dobong-adress {
+  position: absolute;
+  top: -150px;
+  left: -5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.active .dobong-adress {
+  visibility: visible;
+  opacity: 1;
+}
+
+.taereung-adress {
+  position: absolute;
+  top: -150px;
+  left: -5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.active .taereung-adress {
+  visibility: visible;
+  opacity: 1;
+}
+
+.guro-adress {
+  position: absolute;
+  top: 50px;
+  left: -5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.active .guro-adress {
+  visibility: visible;
+  opacity: 1;
+}
+
+.seongdong-adress {
+  position: absolute;
+  top: 60px;
+  left: -5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.active .seongdong-adress {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gangdong-adress {
+  position: absolute;
+  top: 60px;
+  left: -5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.active .gangdong-adress {
+  visibility: visible;
+  opacity: 1;
+}
+
+.factory-list {
+  display: none;
+}
+
+/* 서울탁주 홍보영상 */
+
+.video-bori {
+  position: relative;
+  width: 100%;
+}
+
+.video-bori>img {
+  position: absolute;
+  top: 100px;
+  left: -60px;
+  width: 20%;
+  opacity: 0.2;
+}
+
+.takju-youtube h1 {
+  text-align: center;
+}
+
+.youtube-thumbnail {
+  width: 100%;
+}
+
+.youtube-mainThumbnail {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 40%;
+  border-radius: 7px;
+  background-image: url(../img/video-img.jpg);
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.youtube-mainThumbnail .playBtn__large {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.youtube-mainThumbnail .playBtn__large::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid rgba(0, 0, 0, 0.7);
+  transform: translate(-42%, -50%);
+  content: '';
+}
+
+.youtube-thumbnail__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.youtube-thumbnail__list>a {
+  display: inline-block;
+  position: relative;
+  width: calc(33% - 10px);
+  padding-bottom: 20%;
+  border-radius: 7px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.smallThumbnail-img1 {
+  background-image: url(../img/video-img2.jpg);
+}
+
+.smallThumbnail-img2 {
+  background-image: url(../img/video-img3.jpg);
+}
+
+.smallThumbnail-img3 {
+  background-image: url(../img/video-img4.jpg);
+}
+
+.youtube-thumbnail__list .playBtn__small {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.youtube-thumbnail__list .playBtn__small::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid rgba(0, 0, 0, 0.7);
+  transform: translate(-45%, -50%);
+  content: '';
+}
+
+.video-popup.reveal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.video-popup .video-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 60%;
+  padding-bottom: 30%;
+}
+
+.video-popup .video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.video-popup.reveal .video-popup-closer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* 찾아오시는 길 */
+.location-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.location-map {
+  /* width: 100%; */
+  /* background: url(../img/location.jpg) 50% / cover; */
+}
+
+.location-info {
+  width: 35%;
+  margin-left: 30px;
+}
+
+.takju-info {
+  margin-bottom: 30px;
+}
+
+.takju-info p:first-child {
+  font-size: 16px;
+
+}
+
+.info-line {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 30px 0;
+}
+
+.location-wrap .font-14px {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.bus-info p:first-child {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+
+
+.factoryList-address {
+  display: none;
+}
+
+.takju-location h1 {
+  text-align: center;
+}
+
+.factoryList-address.show {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* 반응형 */
+
+@media (max-width: 1600px) {
+  .aboutUs-page section {
+    padding: 200px 50px;
+    box-sizing: border-box;
+  }
+
+  .aboutUs-background__bori>img:nth-child(1) {
+    top: 900px;
+  }
+
+  .subu {
+    left: 340px;
+  }
+
+  .dobong {
+    top: 30px;
+    right: 370px;
+  }
+
+  .taereung {
+    top: 100px;
+  }
+
+  .guro {
+    left: 200px;
+  }
+
+  .seongdong {
+    right: 340px;
+  }
+
+  .gangdong {
+    right: 140px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .aboutUs-background__bori>img:nth-child(1) {
+    top: 700px;
+  }
+
+  .aboutUs-background__bori>img:nth-child(3) {
+    top: 3200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .video-bori>img {
+    top: 50px;
+  }
+
+  .aboutUs-page H1 {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+
+  .aboutUs-page H2 {
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  .aboutUs-page section {
+    padding: 150px 40px;
+    box-sizing: border-box;
+  }
+
+  .aboutUs-img {
+    margin-top: 60px;
+  }
+
+  .aboutUs-intro {
+    flex-wrap: wrap;
+  }
+
+  .aboutUs-intro>div {
+    width: 100%;
+  }
+
+  .factory-title {
+    display: none;
+  }
+
+  .factory-map__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .factory-list {
+    display: block;
+    width: 25%;
+    padding: 50px 30px;
+    background-color: #cbc6ad;
+    box-sizing: border-box;
+  }
+
+  .factoryList-title {
+    width: 100%;
+    margin-bottom: 20px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+  }
+
+  .factoryList-title a {
+    padding: 10px 0;
+    border-bottom: 1px solid #3333;
+    box-sizing: border-box;
+  }
+
+  .factory-map__img {
+    position: relative;
+    width: 70%;
+  }
+
+  .img-60th {
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(../img/60th.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .factory-addressBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  .factoryList-address {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    opacity: 0;
+  }
+
+  .factory-addressBox P {
+    font-weight: 350;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .factory-addressBox H2 {
+    margin-bottom: 5px;
+  }
+
+  .map-wrap {
+    position: relative;
+  }
+
+  .factoryList-address.show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+
+
+  .img-60th {
+    display: none;
+  }
+
+  .factory-map__wrap {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  .factory-map__img {
+    width: 100%;
+  }
+
+  .factory-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+  }
+
+  .factoryList-title {
+    width: 250px;
+  }
+
+  .factoryList-title a {
+    border: none;
+    font-size: 15px;
+  }
+
+  .factoryList-title {
+    margin-bottom: 0;
+  }
+
+  .location-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .location-map {
+    width: 100%;
+    padding-bottom: 40%;
+  }
+
+  .location-info {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  /* .factory-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  } */
+
+  /* .factoryList-title {
+    width: 200px;
+  } */
+}
+
+@media (max-width: 660px) {
+  .factoryList-title {
+    width: 150px;
+  }
+
+  .factory-map__wrap {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .factory-list {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .factory-map::before {
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    background-color: transparent;
+    box-sizing: border-box;
+    content: '';
+  }
+}
+
+@media (max-width: 800px) {
+  .video-bori>img {
+    left: -30px;
+  }
+
+  .factory-addressBox {
+    top: -100px;
+    width: 200px;
+  }
+
+  .factory-addressBox H2 {
+    font-size: 15px;
+  }
+
+  .factory-addressBox P {
+    font-size: 13px;
+  }
+
+  .factory-list li {
+    font-size: 16px;
+  }
+
+  .aboutUs-page section {
+    padding: 100px 40px;
+  }
+
+  .location-info {
+    width: 100%;
+
+  }
+}

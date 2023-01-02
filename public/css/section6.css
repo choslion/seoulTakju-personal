@@ -1,0 +1,277 @@
+.section6 {
+  position: relative;
+}
+
+.section6 .contents-box > article:first-child {
+  width: 30%;
+}
+
+.section6 .contents-box > article:last-child {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section6 h2 {
+  font-size: 26px;
+  color: #333333;
+  line-height: 1.3;
+}
+
+.section6 h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 1.3;
+}
+
+.section6 .side-bg {
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  transition: all 0.4s;
+  width: 15%;
+}
+
+.section6 .side-bg img {
+  opacity: 0.6;
+}
+
+.section6 .side-sullsang {
+  position: absolute;
+  bottom: -300px;
+  left: 50px;
+  transition: all 0.4s;
+}
+
+.section6 .side-sullsang img {
+  width: 50%;
+}
+
+.section6-wrap {
+  padding: 100px 0px;
+}
+
+.section6 .flex-row {
+  display: flex;
+}
+
+.section6 .board-title {
+  width: 33.3333%;
+}
+
+.section6 .board-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 66.6667%;
+  text-align: center;
+}
+
+.section6 .board-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px 0;
+  border-top: 3px solid #c2bfaf;
+  border-bottom: 3px solid #c2bfaf;
+}
+
+.section6 .board-wrap:not(:first-child) {
+  border-top: none;
+}
+
+.section6 .board-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section6 .board-list__title {
+  margin-left: 30px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.section6 .board-list__date {
+  margin-right: 30px;
+  font-size: 18px;
+  color: #777777;
+}
+
+.section6 .board-list__author {
+  margin-right: 30px;
+  font-size: 18px;
+  color: #555555;
+}
+
+@media screen and (max-width: 1600px) {
+  .section6 .contents-box > article {
+    width: 100%;
+  }
+
+  .section6 .contents-box > article:first-child {
+    width: 100%;
+  }
+
+  .section6 .contents-box > article:last-child {
+    width: 100%;
+  }
+
+  .section6 .side-sullsang {
+    left: 50px;
+  }
+
+  .section6 .side-bg {
+    top: -50px;
+  }
+
+  .section6 .area {
+    flex-direction: column;
+  }
+
+  .section6 h1 {
+    margin-bottom: 60px;
+  }
+
+  .section6 .flex-row {
+    display: block;
+  }
+
+  .section6 .title {
+    font-size: 44px;
+  }
+
+  .section6 .board-list {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section6 h1 {
+    font-size: 36px;
+  }
+
+  .info-title {
+    font-size: 20px;
+  }
+
+  .info-date {
+    font-size: 14px;
+  }
+
+  .info-author {
+    font-size: 14px;
+  }
+
+  .section6 .board-list__title {
+    font-size: 20px;
+  }
+
+  .section6 .board-list__date {
+    font-size: 14px;
+  }
+
+  .section6 .board-list__author {
+    font-size: 14px;
+  }
+
+  .section6 .side-bg {
+    top: -100px;
+    width: 25%;
+  }
+
+  .section6 .side-sullsang img {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .area {
+    width: 100%;
+    max-width: 1600px;
+    padding: 50px 15px;
+  }
+
+  .section6-wrap {
+    padding: 50px 0px;
+  }
+
+  .section6 .title {
+    font-size: 28px;
+  }
+
+  .section6 .board-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 45px 0 35px 0;
+  }
+
+  .section6 .board-list__author {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 13px;
+  }
+
+  .section6 .board-title {
+    width: 100%;
+  }
+
+  .section6 .board-list__title {
+    font-size: 18px;
+  }
+
+  .section6 .board-list__date {
+    margin-right: 0;
+    margin-left: 15px;
+    font-size: 13px;
+  }
+
+  .block {
+    display: none;
+  }
+
+  .none {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .padding-wrap {
+    padding: 0;
+  }
+
+  .section6 .board-wrap {
+    flex-direction: column;
+    align-items: baseline;
+    padding: 20px 0;
+  }
+
+  .section6 .board-list__title {
+    margin-top: 20px;
+  }
+
+  .section6 .board-list__date {
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .section6 .side-sullsang {
+    bottom: -100px;
+    left: 0;
+  }
+
+  .section6 .side-sullsang img {
+    width: 30%;
+  }
+
+  .section6 .side-bg {
+    width: 40%;
+  }
+}
+@media (max-width: 465px) {
+  .section6 .board-list {
+    text-align: left;
+  }
+}

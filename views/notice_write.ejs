@@ -1,0 +1,17 @@
+<main class="notice-write ko">
+  <section class="notice-wrap">
+    <div class="notice-page__title" style="margin-bottom: 50px">
+      <h1>공지사항 작성</h1>
+    </div>
+    <form method="post" action="/noticeWrite" class="notice_contents">
+      <input class="notice-title" type="text" name="title" placeholder="제목을 입력해주세요." />
+      <div>
+        <textarea class="notice_contentsTxt" name="content" placeholder="내용을 입력해주세요."></textarea>
+      </div>
+      <div class="notice-buttons">
+        <a class="notice__confirmBtn" href="/notice">취소</a>
+        <input class="notice__confirmBtn" type="submit" value="등록" />
+      </div>
+    </form>
+  </section>
+</main>

@@ -1,0 +1,92 @@
+#welcome > section {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 180px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.welcome__title > h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.welcome__img {
+  width: 100px;
+  height: auto;
+  text-align: center;
+  margin: 50px auto;
+}
+.welcome__img > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sign__done {
+  padding: 125px 150px;
+  border-radius: 50px 0;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #625b3a;
+}
+.sign__done > h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sign__done--text {
+  text-align: center;
+}
+.sign__done--text > p {
+  color: #818181;
+}
+
+.sign__done--text > .id {
+  margin: 20px 0 10px 0;
+}
+
+.controlBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.controlBtn > article > p > a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  border: 1px solid rgb(180, 180, 180);
+  color: #333;
+  line-height: 50px;
+  transition: all 0.5s;
+}
+.controlBtn > article > p > a:hover {
+  background-color: #625b3a;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  #welcome > section {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .controlBtn {
+    justify-content: center;
+    width: 100%;
+  }
+  .controlBtn > article:nth-child(2) {
+    margin-left: 40px;
+  }
+
+  .sign__done {
+    padding: 125px 20px;
+  }
+  #welcome > section {
+    padding: 80px 20px;
+  }
+  .sign__done > h1 {
+    font-size: 28px;
+  }
+}

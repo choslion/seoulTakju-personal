@@ -1,0 +1,25 @@
+<main class="news_page ko">
+  <h1 style="padding-bottom: 10px">보도자료</h1>
+  <div class="notice__search ko">
+    <input onkeyup="filter()" type="text" id="value" placeholder="검색어를 입력해 주세요" />
+    <a href=""><img src="img/notice search.png" alt="" /></a>
+  </div>
+  <section class="news-wrap">
+    <% rows.forEach((row,index) => { %>
+    <a onclick="javascript:location.href='/detailNews?id=<%= row.id %>'">
+      <div class="news-content list">
+        <div class="news-img">
+          <img src="<%= row.img %>" />
+        </div>
+        <div class="news-text">
+          <h1 class="news-title title"><%= row.title %></h1>
+          <span class="news-writer">서울탁주</span>
+          <span class="news-date"><%= row.create_time %></span>
+        </div>
+      </div>
+    </a>
+    <% }) %>
+
+    <button class="writeBtn" type="button"><a onclick="location.href='/newsWrite'">글쓰기</a></button>
+  </section>
+</main>

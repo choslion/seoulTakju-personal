@@ -1,0 +1,153 @@
+.login-page__wrap {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-page__title h1 {
+  margin-bottom: 15px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-page__idpw > input {
+  width: 100%;
+  height: 45px;
+  padding-left: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.login-id {
+  margin-bottom: 5px;
+}
+
+.securityBtn {
+  margin: 10px 0;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  color: #333;
+}
+
+button {
+  padding: 0;
+}
+
+.securityBtn > span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+  background-image: url(../../img/security.png);
+  background-size: cover;
+}
+
+.loginBtn > input {
+  display: block;
+  width: 100%;
+  height: 45px;
+  border: none;
+  background-color: #cbc6ad;
+  font-size: 16px;
+  color: #333;
+  line-height: 45px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+.loginBtn > a:hover {
+  background-color: #a6a28e;
+}
+
+.login__sub-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.login__sub-button > p {
+  padding: 0 8px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.findID {
+  position: relative;
+}
+
+.findID::after {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: -2px;
+  width: 1px;
+  height: 15px;
+  background-color: #333;
+  content: '';
+}
+
+.findPW {
+  position: relative;
+}
+
+.findPW::after {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: -2px;
+  width: 1px;
+  height: 15px;
+  background-color: #333;
+  content: '';
+}
+
+.backgroun__bori {
+  position: relative;
+}
+
+.backgroun__bori img {
+  display: block;
+  position: absolute;
+  right: -280px;
+  bottom: -210px;
+  width: 60%;
+  opacity: 0.3;
+}
+
+@media (max-width: 1000px) {
+  .backgroun__bori img {
+    right: -170px;
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .backgroun__bori img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .backgroun__bori img {
+    display: none;
+  }
+
+  .p200 {
+    padding: 150px 0 150px;
+  }
+
+  .login-page__title h1 {
+    font-size: 35px;
+  }
+
+  .login-page__wrap {
+    padding: 0 30px;
+  }
+}

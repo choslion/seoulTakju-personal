@@ -1,0 +1,18 @@
+<div class="news-write__wrap">
+  <h1>상품수정</h1>
+  <form action="/newsUpdate" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="<%= row.id %>" />
+    <div>
+      <input type="file" name="img" value="<%= row.img %>" />
+    </div>
+    <div>
+      <input type="text" name="title" value="<%= row.title %>" />
+    </div>
+    <div>
+      <textarea name="content" cols="50" rows="30" placeholder="내용을 입력해주세요."><%= row.content %></textarea>
+    </div>
+    <div>
+      <input type="submit" value="저장" />
+    </div>
+  </form>
+</div>

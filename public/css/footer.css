@@ -1,0 +1,241 @@
+footer {
+  width: 100%;
+  height: auto;
+  padding: 70px 0;
+  background-color: #625b3a;
+  box-sizing: border-box;
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 45px;
+  box-sizing: border-box;
+}
+
+.w1280wrap {
+  display: flex;
+  width: 100%;
+}
+
+/* 로고 */
+.footer__logo {
+  width: 160px;
+  height: 43px;
+  background-image: url(../img/footer_logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* footer 가운데 컨텐츠 */
+.footer__text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__text > ul > .en {
+  margin-bottom: 15px;
+}
+
+/* footer SNS 박스들 */
+
+.footer__joinMore {
+  display: flex;
+  width: 500px;
+}
+
+.facebook {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.insta {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* SNS 박스 */
+.footer__SNS {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__SNS > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 0;
+  border-radius: 10px;
+  background-color: #cbc6ad;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.footer__SNS > div > p {
+  display: block;
+  margin-left: 10px;
+}
+
+/* 페이스북 */
+.facebook__img {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/ft_facebook.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.footer__SNS > .facebook > p {
+  margin-left: 20px;
+}
+
+.facebook {
+  width: 100%;
+}
+
+.insta {
+  width: 100%;
+}
+
+.insta > i {
+  font-size: 27px;
+}
+
+/* qr코드 */
+.QR {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 16px;
+  padding: 16px 26px;
+  border-radius: 10px;
+  background-color: #cbc6ad;
+  box-sizing: border-box;
+}
+
+.QR_img {
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/qrcode.png);
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.QR > p {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+fp-enabled {
+  overflow: hidden;
+}
+
+@media (max-width: 1345px) {
+  .footer__wrap {
+    flex-direction: column;
+  }
+
+  .footer__wrap {
+    align-items: start;
+  }
+
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+
+  .footer__joinMore {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1080px) {
+}
+
+@media (max-width: 768px) {
+  .QR {
+    padding: 16px 10px;
+    box-sizing: border-box;
+  }
+
+  .QR > p {
+    font-size: 12px;
+  }
+
+  .footer__SNS > div {
+    font-size: 12px;
+  }
+
+  .facebook__img {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/ft_facebook.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .QR_img {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/qrcode.png);
+  }
+
+  .footer__text {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer__wrap {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer__SNS {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__SNS > div > p {
+    font-size: 12px;
+  }
+  .footer__joinMore {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__SNS > div {
+    width: calc(50% - 5px);
+  }
+  .insta {
+    margin: 0;
+    height: 50px;
+  }
+  .facebook {
+    margin: 0;
+  }
+  .QR {
+    margin: 10px 0 0 0;
+  }
+  .footer__SNS > .facebook > p {
+    margin-left: 10px;
+  }
+  .footer__SNS > div > p > span {
+    display: none;
+  }
+}

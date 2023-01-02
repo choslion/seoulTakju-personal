@@ -1,0 +1,25 @@
+/* sign area */
+@import url(../sub_header.css);
+@import url(login.css);
+@import url(join.css);
+@import url(welcome.css);
+@import url(../footer.css);
+
+main {
+  background-color: #f5f2e1;
+  /* margin-top: 200px; */
+  color: #333333;
+  /* padding: 200px 0; */
+}
+
+.en {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ko {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+input {
+  outline: none;
+}

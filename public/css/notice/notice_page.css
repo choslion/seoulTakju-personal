@@ -1,0 +1,125 @@
+.notice-page {
+  position: relative;
+  padding: 200px 0;
+  box-sizing: border-box;
+}
+
+.notice-page .notice_bori__left {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  width: 17%;
+  opacity: 0.3;
+}
+
+.notice-page .notice_bori__right {
+  position: absolute;
+  right: 60px;
+  bottom: 15px;
+  width: 15%;
+  opacity: 0.3;
+  transform: rotate(30deg);
+}
+
+.notice-detail__wrap {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* margin-top: 200px; */
+}
+
+.notice-detail__wrap h2 {
+  font-weight: bold;
+}
+
+.notice-page__contents {
+  margin-top: 70px;
+}
+
+.notice_writer {
+  margin-right: 10px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.notice_writeDate {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.notice-contents__txtWrap {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #cbc6ad;
+  border-bottom: 1px solid #cbc6ad;
+}
+
+.notice-contents__text {
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+
+.content-listLine:hover {
+  background-color: rgba(203, 198, 173, 0.3);
+  cursor: pointer;
+}
+
+.content-listLine {
+  display: flex;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.list_arrow {
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-top: 5px;
+  margin-right: 20px;
+  background-image: url(../../img/notice_arrow.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.notice-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.notice__deleteBtn {
+  float: right;
+  width: 66px;
+  height: 30px;
+  border: 1px solid #cbc6ad;
+  background-color: transparent;
+}
+
+.notice__editBtn {
+  float: right;
+  width: 66px;
+  height: 30px;
+  margin-left: 10px;
+  border: 1px solid #cbc6ad;
+  background-color: transparent;
+}
+
+.notice__listBtn {
+  width: 66px;
+  height: 30px;
+  border: none;
+  background-color: #cbc6ad;
+}
+
+@media (max-width: 1400px) {
+  .notice-page {
+    padding: 200px 40px 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .notice-contents__Title span {
+    font-size: 14px;
+  }
+}
