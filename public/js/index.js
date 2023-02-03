@@ -6,17 +6,6 @@ let h_wrap = document.getElementById('h_wrap');
 let gnb = document.getElementById('gnb');
 let overON = document.querySelectorAll('.overON');
 
-// gnb.addEventListener('mouseover', event => {
-//   for (j = 0; j < overON.length; j++) {
-//     h_wrap.style.backgroundColor = '#fff';
-//   }
-// });
-// gnb.addEventListener('mouseleave', event => {
-//   for (j = 0; j < overON.length; j++) {
-//     h_wrap.style.backgroundColor = 'transparent';
-//   }
-// });
-
 gnb.addEventListener('mouseover', event => {
   h_wrap.style.height = '160px';
   for (i = 0; i < conts.length; i++) {
