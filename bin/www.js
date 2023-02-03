@@ -1,4 +1,4 @@
 let app = require('../app');
-let PORT = 8080;
+let PORT = 6005;
 
 app.listen(process.env.PORT || PORT);
