@@ -9,30 +9,27 @@
         <input onkeyup="filter()" type="text" id="value" placeholder="검색어를 입력해 주세요" />
         <a href=""><img src="img/notice search.png" alt="" /></a>
       </div>
-      <div class="swiper notice-swiper">
-        <div class="swiper-wrapper">
-          <ul class="notice-list swiper-slide">
-            <% rows.forEach((row,index) => { %>
-            <div class="list">
-              <li>
-                <a onclick="javascript:location.href='/noticeDetail?id=<%= row.id %>'">
-                  <div class="p10 notice-writer">
-                    <p>서울탁주</p>
-                  </div>
-                  <div>
-                    <h2 class="title"><%= row.title %></h2>
-                  </div>
-                  <div class="notice-date">
-                    <p><%= row.create_time %></p>
-                  </div>
-                </a>
-              </li>
-            </div>
-            <% }) %>
-          </ul>
-        </div>
+      <div class="notice-swiper">
+        <ul class="notice-list">
+          <% rows.forEach((row,index) => { %>
+          <div class="list">
+            <li>
+              <a onclick="javascript:location.href='/noticeDetail?id=<%= row.id %>'">
+                <div class="p10 notice-writer">
+                  <p>서울탁주</p>
+                </div>
+                <div>
+                  <h2 class="title"><%= row.title %></h2>
+                </div>
+                <div class="notice-date">
+                  <p><%= row.create_time %></p>
+                </div>
+              </a>
+            </li>
+          </div>
+          <% }) %>
+        </ul>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
     <div>
       <button class="writeBtn" type="button"><a onclick="location.href='/noticeWrite'">글쓰기</a></button>
