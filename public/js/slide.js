@@ -1,26 +1,3 @@
-// var swiper = new Swiper('.mySwiper', {
-//   slidesPerView: 1,
-//   effect: 'fade',
-//   fadeEffect: {
-//     crossFade: true,
-//   },
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   autoplay: {
-//     delay: 3000,
-//     disableOnInteraction: false,
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
-
-// 새로운것
-
 var main02Swiper = new Swiper('.img-box.swiper-container', {
   effect: 'fade',
   fadeEffect: {crossFade: true},
@@ -56,8 +33,14 @@ var swiper03 = new Swiper('.hover-box .mo-box .swiper-container', {
   pagination: {el: '.hover-box .swiper-pagination', clickable: true},
 });
 
-var swiperNotice = new Swiper('.swiper.notice-swiper', {
-  pagination: {
-    el: '.swiper-pagination',
+var swiper = new Swiper('.road-container', {
+  direction: 'vertical',
+  slidesPerView: 6,
+  loop: true,
+  loopedSlides: 1,
+  autoplay: {
+    delay: 2000,
+    // disableOnInteraction: false,
   },
+  // touchRatio: 0,
 });
