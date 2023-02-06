@@ -35,9 +35,9 @@ var swiper03 = new Swiper('.hover-box .mo-box .swiper-container', {
 
 var swiper = new Swiper('.road-container', {
   direction: 'vertical',
-  slidesPerView: 6,
   loop: true,
-  loopedSlides: 1,
+  // loopAdditionalSlides: 1,
+  slidesPerView: 9,
   autoplay: {
     delay: 2000,
     // disableOnInteraction: false,
